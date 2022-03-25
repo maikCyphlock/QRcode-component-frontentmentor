@@ -1,0 +1,61 @@
+$round: 16px;
+$img-size: 400px;
+
+body{
+    font-size: 15px;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.bg{
+    background: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card{
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: $round;
+    max-width: $img-size;
+    &__logo{
+        &--img{
+            border-radius: $round;
+            
+            width: 100%;
+        }
+        padding: .9rem ;
+    }
+
+    &__content{
+        padding: 0 .9rem 1rem;
+        text-align: center;
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+        &--heading{
+            font-weight: 700;
+            color: hsl(218, 44%, 22%);
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.attribution{
+    padding: 1rem;
+}
