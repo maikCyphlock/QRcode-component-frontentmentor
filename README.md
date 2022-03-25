@@ -1,4 +1,4 @@
-# Frontend Mentor - FAQ accordion card
+# Frontend Mentor - QRcode Component card
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
 
